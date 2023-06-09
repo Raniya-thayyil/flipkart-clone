@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/mobileview/Header';
+import FirstNav from './components/mobileview/FirstNav';
+import Carousel from './components/mobileview/Carousel';
+import ThreeImages from './components/mobileview/ThreeImages';
+import TwoImages from './components/mobileview/TwoImages';
+import ElectronicList from './components/mobileview/ElectronicList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header/>
+    <FirstNav/>
+    <Carousel/>
+    <ThreeImages/>
+    <TwoImages/>
+    <ElectronicList/>
     </div>
   );
 }
