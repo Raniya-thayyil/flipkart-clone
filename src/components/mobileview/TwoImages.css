@@ -1,0 +1,25 @@
+.imges-list {
+    display:flex
+}
+.imges-list img {
+    width: 160px;
+
+}
+@media screen and (min-width:375px) {
+    .imges-list img {
+        width: 187px;
+    }
+    
+}
+@media screen and (min-width:425px) {
+    .imges-list img {
+        width: 212px;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .imges-list img {
+        width: 384px;
+    }
+    
+}
