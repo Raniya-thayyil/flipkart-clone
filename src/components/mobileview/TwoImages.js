@@ -21,7 +21,7 @@ function TwoImages() {
   }, []);
   return (
     <>
-      <div className="imges-list">
+      <div className="images-list">
         {data.map((item, idx) => {
           return <img src={item} />;
         })}
