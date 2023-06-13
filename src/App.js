@@ -6,16 +6,16 @@ import Carousel from './components/mobileview/Carousel';
 import ThreeImages from './components/mobileview/ThreeImages';
 import TwoImages from './components/mobileview/TwoImages';
 import ElectronicList from './components/mobileview/ElectronicList';
+import InterestingFind from './components/mobileview/InterestingFind';
+import Whishlist from './components/mobileview/Whishlist';
+import DesktopHeader from './components/desktopview/DesktopHeader';
+import MobileDesktop from './MobileDesktop';
 
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <FirstNav/>
-    <Carousel/>
-    <ThreeImages/>
-    <TwoImages/>
-    <ElectronicList/>
+    <div className="App" >
+      <MobileDesktop/>
+ 
     </div>
   );
 }

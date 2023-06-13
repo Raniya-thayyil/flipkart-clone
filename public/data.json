@@ -155,7 +155,199 @@
         "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/a3cbfe859584161e.jpg?q=60",
         "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/d14c1897b43595c8.jpg?q=60",
         "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/2e45e075e5baa61a.png?q=60",
-        "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/9bf81120baa157f9.png?q=60"
+        "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/9bf81120baa157f9.png?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/a3cbfe859584161e.jpg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/320/320/image/d14c1897b43595c8.jpg?q=60"
+
+    ],
+
+    "sponsored" : [
+        "https://rukminim1.flixcart.com/fk-p-flap/583/525/image/59ef91f7fd53f27e.jpeg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/583/525/image/934973f6e54e4c59.jpeg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/583/525/image/ccaafbda9cab4a38.jpeg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/583/525/image/3ab6049cfb395964.jpeg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/583/525/image/52b14889569c761d.jpeg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/583/525/image/1288cd048f2f323b.jpeg?q=60"
+    ],
+
+
+    "headNavList" : [
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/50379f65f7b59622.png?q=100",
+            "caption" : "Top Offers"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0a0243119f02f7a5.png?q=100",
+            "caption" : "Mobiles & Tablets"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/da4491af4ee551d6.png?q=100",
+            "caption" : "Electronics"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/7a9da987f315df35.png?q=100",
+            "caption" : "TVs & Appliances"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/f7b2a4eeb35a8c9f.png?q=100",
+            "caption" : "Fashion"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e83a5f27b01d9a7e.png?q=100",
+            "caption" : "Beauty"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a8cfa33c7206ae57.png?q=100",
+            "caption" : "Home & Kitchen"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4e0bdf8567ecb960.png?q=100",
+            "caption" : "Furniture"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/def8193d5a7380ee.png?q=100",
+            "caption" : "Flights"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100",
+            "caption" : "Grocery"
+        }
+    ],
+
+    "carousel" : [
+        "https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/70b213d755201840.jpeg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/4f163c7c76979a7d.png?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/feebef8f371b2c09.jpeg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/96742a45280b19a1.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/a4e7f752c443c594.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/3d274f1289f79e2a.jpeg?q=50"
+
+    ],
+
+    "topOffers" : [
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70",
+            "caption" : "Iphone 14/14plus",
+            "offer" : "incl of offers",
+            "price" : "from 67,999*"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/kzpw2vk0/mobile/u/o/q/galaxy-s21-fe-5g-lavender-8gb-128gb-storage-sm-g990elviinu-original-imagbnbdaj3tygup.jpeg?q=70",
+            "caption" : "Samsung S21 FE",
+            "offer" : "incl of offers",
+            "price" : "from ₹31,999*"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/mobile/g/g/3/-original-imaggbrccwsnygar.jpeg?q=70",
+            "caption" : "Pixel 6A",
+            "offer" : "from ₹28,999",
+            "price" : "OLed Display"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/mobile/z/x/x/-original-imagp55frhhddu6n.jpeg?q=70",
+            "caption" : "Realme C55",
+            "offer" : "From 10,499",
+            "price" : "6.72\" 90Hz FHD+ Display"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/bottle/3/f/9/1000-crystal-clear-water-bottle-for-fridge-home-office-gym-original-imagnpgch6jzqgrm.jpeg?q=70",
+            "caption" : "Water Bottles",
+            "offer" : "From ₹119",
+            "price" : "Cello & More"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/electric-kettle/w/g/r/-original-imaggkhdr4thnypr.jpeg?q=70",
+            "caption" : "Top Electric Kettles",
+            "offer" : "Up to 70% Off",
+            "price" : "Top Brand"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/l1pc3gw0/kurta/e/l/m/xxl-ku672red-mokshi-original-imagd7pdzncjzedb.jpeg?q=70",
+            "caption" : "Trendy Kurtis & Sets!",
+            "offer" : "Min 65% Off",
+            "price" : "Libas, Varanga & more"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/kzpw2vk0/television/w/y/w/-original-imagbz2cczwh5ync.jpeg?q=70",
+            "caption" : "Best-selling 4k TVs",
+            "offer" : "From ₹16,749*",
+            "price" : "Samsung, Sony, LG, Mi &more"
+        }
+    ],
+
+    "acMobiles" : [
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/32655c2ae11bea21.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/0e2442f1a34ac836.jpeg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/480/480/image/a20cec49769ebfc5.jpg?q=50"    
+
+    ],
+
+    "topDeals" : [
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/l2tcfbk0/kurta/9/g/j/xxl-indigobird-stylum-original-image2g7ym9fu9wt.jpeg?q=70",
+            "caption" : "Super Offers On Kurtas & Sets",
+            "offerLevel" : "Under ₹599",
+            "desc" : "Bijli Deals!"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/shoe/j/o/u/-original-imaghvb6pxynaurx.jpeg?q=70",
+            "caption" : "Adidas, Puma & more",
+            "offerLevel" : "Min 50% Off",
+            "desc" : "Women's Sports Shoes"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/shoe/h/a/k/-original-imagfyy3pzjhrbrd-bb.jpeg?q=70",
+            "caption" : "PUMA, ADIDAS & more",
+            "offerLevel" : "Min. 50% Off",
+            "desc" : "Men's Shoes, Sneakers..."
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/kfwvcsw0/backpack/g/p/r/drift-backpack-04-red-blue-lf8-0-10-004-backpack-american-original-imafw9c4ph6sdtfk.jpeg?q=70",
+            "caption" : "Laptop Backpacks",
+            "offerLevel" : "Under ₹899",
+            "desc" : "Puma, Gear, Wrogn..."
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/shoe/g/g/y/-original-imagg7epfcgfsva7.jpeg?q=70",
+            "caption" : "WROGN, Red Tape & more",
+            "offerLevel" : "Min. 40% Off",
+            "desc" : "Sneakers, High Tops & more"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/200/200/xif0q/shirt/d/v/z/m-hlsh014060-highlander-original-imagkc3mzqgunvfd.jpeg?q=70",
+            "caption" : "Peter England, Allen Solly...",
+            "offerLevel" : "Min. 50%+Extra 10%Off",
+            "desc" : "Casual Shirts, Trousers..."
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/400/400/jp2xoy80/watch/c/j/8/38042pp04-fastrack-original-imafbet3f2y54u6s.jpeg?q=70",
+            "caption" : "Fastrack, Timex, Sonata.",
+            "offerLevel" : "From ₹499",
+            "desc" : "Rush To Grab The Best Offer!"
+        },
+        {
+            "image" : "https://rukminim1.flixcart.com/image/400/400/l4ei1e80/dress/s/r/y/m-16771386-dressberry-original-imagfbaeya8ceerp.jpeg?q=70",
+            "caption" : "Dressberry, Mast & Harbour...",
+            "offerLevel" : "50-80% Off",
+            "desc" : "Women's Dresses & more"
+        }
+    ],
+    "ads" : [
+        "https://rukminim1.flixcart.com/fk-p-flap/960/960/image/e8890c77e9f2f7de.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/960/960/image/64f91be1237c8713.jpg?q=50",
+        "https://rukminim1.flixcart.com/fk-p-flap/960/960/image/9d479fced70e60df.jpg?q=50"
+        
+    ],
+
+    "featuredBrand" : [
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/c0184fdc5bc554b4.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/3710c76f8df8718d.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/678cb440ca33d834.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/b3c8bf0011bb5232.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/462a5e6391510f9f.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/1907a94be0e89fa4.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/c61072b241376138.jpeg?q=70",
+        "https://rukminim1.flixcart.com/fk-p-flap/656/352/image/5237785d1ba28d70.jpeg?q=70"
 
 
     ]
