@@ -55,7 +55,7 @@
     font-size: 16px;
     font-family: font4;
 }
-form input {
+.form1 input {
     padding: 11px;
     /* padding-inline:48px ; */
     padding-left: 38px;
@@ -68,13 +68,13 @@ form input {
     margin-top: 11px;  
     /* color: #878787; */
 }
-form {
+.form1 {
     position: relative;
 }
 ::placeholder {
     color: #878787;
 }
-form img {
+.form1 img {
     width:14px;
     position: absolute;
     top:23px;

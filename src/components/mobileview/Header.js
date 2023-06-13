@@ -28,7 +28,7 @@ function Header() {
             </div>
         </div>
         <div className="header-bottom">
-            <form>
+            <form className="form1">
                 <img src={search}/>
                 <input placeholder="Search for Products, Brands and More"/>
             </form>

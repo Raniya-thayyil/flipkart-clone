@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import './Carousel.css'
 
-function Carousel() {
+function Sponsored() {
   const [data, setData] = useState([]);
   let [index, setIndex] = useState(0);
   const fetchData = () => {
@@ -13,7 +13,7 @@ function Carousel() {
         return response.json();
       })
       .then((data) => {
-        setData(data.flashingImages);
+        setData(data.sponsored);
       });
   };
   useEffect(() => {
@@ -40,7 +40,7 @@ function Carousel() {
                   }}
                   key={item}
                 >
-                  <img src={item.image} />
+                  <img src={item} />
                 </div>
             )
               })}
@@ -50,4 +50,4 @@ function Carousel() {
   );
 }
 
-export default Carousel;
+export default Sponsored;

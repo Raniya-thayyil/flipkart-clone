@@ -5,6 +5,7 @@
 .carousel-img img {
     width:320px
 }
+
 @media screen and (min-width:375px) {
     .carousel-img img {
         width:375px
