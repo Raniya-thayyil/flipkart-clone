@@ -3,28 +3,14 @@ import React, { useRef } from "react";
 import "./TopOffers.css";
 import leftAngle from "../assets/leftAngle.svg"
 
-import { useState, useEffect } from "react";
-
-function TopOffers() {
-    const [data, setData] = useState([]);
+function TopOffers(props) {
+    const {
+        offersList
+    } = props     
     const imageCard = useRef();
     const rightAngle = useRef();
-    const leftArrow = useRef();  
-    
-    const fetchData = () => {
-      fetch(
-        "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
-      )
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          setData(data.topOffers);
-        });
-    };
-    useEffect(() => {
-      fetchData();
-    }, []);
+    const leftArrow = useRef();    
+   
 
     const handleClickRight = () => {
         
@@ -53,7 +39,7 @@ function TopOffers() {
             <img src={leftAngle} onClick={handleClickLeft}/>
         </div>
         <div className="topoffers-list" ref={imageCard}>
-            {data.map((item) => (
+            {offersList.map((item) => (
                 <div className="offers-main" >
                     <img src={item.image}/>
                     <div className="texts-offer">
@@ -65,8 +51,7 @@ function TopOffers() {
 
             ))}
         </div>
-        <div className="angle"  ref={rightAngle}>
-            {/* <FaAngleRight className="fa-angle"/> */}
+        <div className="angle"  ref={rightAngle}>           
             <img src={leftAngle} onClick={handleClickRight}/>
         </div>
         <div className="offer-ad">

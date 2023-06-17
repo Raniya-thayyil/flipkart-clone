@@ -1,28 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef} from "react";
 
 import "./TopDeals.css";
-import { FaAngleRight } from "react-icons/fa";
+
 import leftAngle from "../assets/leftAngle.svg"
 
-function TopDeals() {
-    const [data, setData] = useState([]);
+function TopDeals(props) {
+    const {
+        dealsList
+    } = props
+    
     const imgCard = useRef();
     const rightArrow = useRef();
-    const arrowLeft = useRef();
-    const fetchData = () => {
-      fetch(
-        "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
-      )
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          setData(data.topDeals);
-        });
-    };
-    useEffect(() => {
-      fetchData();
-    }, []);
+    const arrowLeft = useRef();  
 
     const handleClickRight = () => {        
         imgCard.current.style.transform = `translateX(${-35}%)`;
@@ -50,12 +39,11 @@ function TopDeals() {
             <img src={leftAngle} onClick={handleClickLeft}/>
         </div>
         <div className="topoffers-list" ref={imgCard}>
-            {data.map((item) => (
+            {dealsList.map((item) => (
                 <div className="offers-main" >
                     <img src={item.image}/>
                     <div className="texts-offer">
-                    <span className="cap">{item.caption}</span><br/>
-                   
+                    <span className="cap">{item.caption}</span><br/>                   
                     <span className="offername">{item.offerLevel}</span><br/>
                     <span className="pricedetail">{item.desc}</span>
                     </div>
@@ -63,11 +51,9 @@ function TopDeals() {
 
             ))}
         </div>
-        <div className="deal-angle" ref={rightArrow}>
-            {/* <FaAngleRight className="fa-angle"/> */}
+        <div className="deal-angle" ref={rightArrow}>           
             <img src={leftAngle} onClick={handleClickRight}/>
-        </div>
-       
+        </div>       
       </div>
     </>
   );

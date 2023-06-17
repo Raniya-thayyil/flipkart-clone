@@ -14,7 +14,11 @@
 .lens {
     width: 20px;
     position: absolute;
-    top: 20px;margin-right: 13px; 
+    top: 20px;margin-right: 13px;
+    /* margin-left: 13px; */
+    /* position: absolute;
+    right: 369px;
+    top:20px; */
 }
 .fr {
     display: flex;
@@ -23,14 +27,14 @@
     
 }
 .fr input {
-  
+    /* position: relative; */
     padding: 9px;
     border-radius: 2px;
     font-size: 14px;
     font-family: font4;
     border: none;
     margin-top: 12px;
-    
+    /* width:177%; */
     margin-left: 4px;
     display: block;
     min-width: 287px;
@@ -38,7 +42,7 @@
 .login-btn {
     background-color: #ffffff;
     padding: 5px 40px;
-   
+    /* border-radius: 2px; */
     margin-top: 12px;
 }
 .login-btn a {
@@ -52,7 +56,8 @@
 .seller-text span {
     font-size: 16px;
     color: #ffffff;
-    font-family: font2;   
+    font-family: font2;
+   
     
 }
 .more-text {

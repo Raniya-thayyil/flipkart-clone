@@ -1,7 +1,6 @@
 .top-offer-textlink {
     background: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/0b22f4bdbe5b032a.jpg?q=90');
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-repeat: no-repeat;   
     background-position: 0px bottom;
     padding: 28px 10px 124px;
     z-index: 3;
@@ -101,9 +100,7 @@ span.pricedetail {
     z-index: 3;
 }
 
-.angle img {
-    /* border: 1px solid #212121; */
-    /* font-size: 32px; */
+.angle img {   
     height: 56px;
     width: 15px;
     
@@ -114,17 +111,14 @@ span.pricedetail {
     box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 13%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 11%);
     border-radius: 2px;
     position: absolute;
-    display: block;
-    /* right: 12px; */
+    display: block;    
     left:241px;
     background-color: #ffffff;
     z-index: 1;
     bottom: 129px;
-
 }
 .leftArrow img {
     height: 56px;
     width: 15px;
-
 }
 

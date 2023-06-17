@@ -1,30 +1,15 @@
 import React from "react";
-
-import { useState} from "react";
-import { useEffect } from "react";
-
 import './NavHeader.css'
 
-function NavHeader() {
-  const [data, setData] = useState([]);
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.headNavList);
-      });
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+function NavHeader(props) {
+    const {
+        navList
+    }= props
+
   return (
     <>
       <div className="main-nav">
-        {data.map((item) => {
+        {navList.map((item) => {
             return (
                 <div className="each-nav">
                 <img src={item.image}/>
@@ -32,10 +17,8 @@ function NavHeader() {
             </div>
             )
         })}
-
       </div>
     </>
   );
 }
-
 export default NavHeader;
