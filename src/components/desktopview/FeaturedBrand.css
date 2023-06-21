@@ -1,6 +1,5 @@
 .features-list {
     display: flex;
-    /* overflow: hidden; */
     gap: 12px;
 }
 .features-list img {
@@ -49,8 +48,7 @@ width: 15px;
     box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 13%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 11%);
     border-radius: 2px;
     position: absolute;
-    display: block;
-    /* right: 12px; */
+    display: block;    
     left:0;
     top: 114px;
     background-color: #ffffff;

@@ -3,26 +3,13 @@ import React, { useEffect, useState } from "react";
 import "./CarouselDesktop.css";
 import leftAngle from "../assets/leftAngle.svg";
 
-function CarouselDesktop() {
-  const [data, setData] = useState([]);
+function CarouselDesktop(props) {
+  const { carouselList } = props;
+
   let [index, setIndex] = useState(0);
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.carousel);
-      });
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const callIndex = () => {
-    setIndex(index === data.length - 1 ? 0 : index + 1);
+    setIndex(index === carouselList.length - 1 ? 0 : index + 1);
   };
 
   useEffect(() => {
@@ -32,14 +19,14 @@ function CarouselDesktop() {
   const handleClickRight = () => {
     setIndex(index - 1);
     callIndex();
-    // clearInterval();
-  }
+    clearInterval();
+  };
 
   const handleClickLeft = () => {
     setIndex(index + 1);
     callIndex();
-    // clearInterval();
-  }
+    clearInterval();
+  };
 
   const clearInterval = () => {
     clearTimeout();
@@ -51,7 +38,7 @@ function CarouselDesktop() {
         <div className="arrowleft">
           <img src={leftAngle} onClick={handleClickLeft} />
         </div>
-        {data.map((item, idx) => (
+        {carouselList.map((item, idx) => (
           <div
             className="desk-crsl"
             style={{
@@ -63,8 +50,8 @@ function CarouselDesktop() {
             <img src={item} />
           </div>
         ))}
-         <div className="arrowright">
-          <img src={leftAngle} onClick={handleClickRight}/>
+        <div className="arrowright">
+          <img src={leftAngle} onClick={handleClickRight} />
         </div>
       </div>
       <div className="hdfc">

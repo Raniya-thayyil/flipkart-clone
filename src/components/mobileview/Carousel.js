@@ -2,26 +2,15 @@ import React, { useEffect, useState } from "react";
 
 import './Carousel.css'
 
-function Carousel() {
-  const [data, setData] = useState([]);
+function Carousel(props) {
   let [index, setIndex] = useState(0);
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.flashingImages);
-      });
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+  
+  const {
+    carouselList
+  } = props 
 
   const callIndex = () => {
-    setIndex(index === data.length - 1 ? 0 : index + 1);
+    setIndex(index === carouselList.length - 1 ? 0 : index + 1);
   };
 
   useEffect(() => {
@@ -30,7 +19,7 @@ function Carousel() {
   return (
     <>
       <div className="carousel-list">
-        {data.map((item) => {
+        {carouselList.map((item) => {
             return (
                 <div
                   className="carousel-img"

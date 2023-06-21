@@ -1,25 +1,11 @@
-import React from "react";
-
-import { useState, useEffect } from "react";
-
+import React from "react"
 import "./InterestingFind.css";
 
-function InterestingFind() {
-  const [data, setData] = useState([]);
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.interestingFinds);
-      });
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+function InterestingFind(props) {
+    const {
+        findsList
+    } = props
+
   return (
     <>
       <div className="list-head">
@@ -28,7 +14,7 @@ function InterestingFind() {
           <a href="">View all</a>
         </div>
         <div className="interesting-list">
-          {data.map((item, idx) => {
+          {findsList.map((item, idx) => {
             return (
               <div className="list-items">
                 <img src={item.image} />
