@@ -20,7 +20,7 @@
     justify-content: flex-end;
     width: 230px;
     padding-inline: 51px;
-    padding-block: 102px;
+    padding-block: 110px;
     z-index: 2;
     background-color: #ffffff;
 }
@@ -54,5 +54,5 @@
     width: 15px;    
 }
 .offers-main img {
-    width: 150px;
+    width: 163px;
 }

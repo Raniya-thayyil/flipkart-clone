@@ -117,26 +117,9 @@ function FlipkartHome() {
 
   const [components, setComponents] = useState([]);
 
-  const [nav, setNav] = useState([]);
-  const [threeImages, setThreeImages] = useState([]);
-  const [twoImages, setTwoImages] = useState([]);
-  const [electronics, setElectronics] = useState([]);
-  const [finds, setFinds] = useState([]);
-  const [priceDrop, setPriceDrop] = useState([]);
-  const [sponsored, setSponsored] = useState([]);
-  const [carousels, setCarousels] = useState([]);
-
-  const [desktopHeader, setDesktopHeader] = useState([]);
-  const [desktopCarousel, setDesktopCarousel] = useState([]);
-  const [topOffer, setTopOffers] = useState([]);
-  const [acMobiles, setAcMobiles] = useState([]);
-  const [topDeals, setDeals] = useState([]);
-  const [ads, setAds] = useState([]);
-  const [features, setFeatures] = useState([]);
-
   const fetchData = () => {
     fetch(
-      "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-clone/main/public/data.json"
+      "https://raw.githubusercontent.com/Raniya-thayyil/flipkart-json/main/data.json"
     )
       .then((response) => {
         return response.json();
@@ -144,21 +127,6 @@ function FlipkartHome() {
       .then((data) => {
         setComponents(data);
 
-        setNav(data.navbar);
-        setThreeImages(data.threeImages);
-        setTwoImages(data.TwoImages);
-        setElectronics(data.electronicsList);
-        setFinds(data.interestingFinds);
-        setPriceDrop(data.pricedropAlert);
-        setSponsored(data.sponsored);
-        setCarousels(data.flashingImages);
-        setDesktopHeader(data.headNavList);
-        setDesktopCarousel(data.carousel);
-        setTopOffers(data.topOffers);
-        setAcMobiles(data.acMobiles);
-        setDeals(data.topDeals);
-        setAds(data.ads);
-        setFeatures(data.featuredBrand);
       });
   };
   useEffect(() => {
@@ -172,64 +140,66 @@ function FlipkartHome() {
       value: components[keyItem],
     };
     arr.push(componentsObj);
-  });
+  }); 
 
-  const getData = (items) => {
-    if (items.key === "navbar") {
-      // console.log(items);
-      return <FirstNav navList={items.value} />;
-      // console.log(items.value);
-    }
-    else if (items.key === 'flashingImages') {
-      return <Carousel carouselList={items.value} />   
-
-
+  const getDataMobile = (items) => {
+    switch (items.key) {
+      case "navbar":
+        return <FirstNav navList={items.value} />
+      case "flashingImages":
+        return <Carousel carouselList={items.value} />
+      case "threeImages" :
+        return <ThreeImages threeImagesList={items.value} />
+      case "TwoImages" :
+        return <TwoImages twoImagesList={items.value} />  
+      case "electronicsList" :
+        return <ElectronicList electronicsList={items.value} />
+      case "interestingFinds" :
+        return <InterestingFind findsList={items.value} />
+      case "pricedropAlert"  :
+        return <Whishlist alerts={items.value} />
+      case "sponsored"  :
+        return <Sponsored sponsoredList={items.value} />        
     }
   };
 
-  // const getDatas = (arr) => {
-  // {arr.map(
-  //   (item, id) =>
-  //     item.key === "navbar" ? <FirstNav navList={item.value} /> : []
+  const getDataDesktop = (item) => {
+    if (item.key === "headNavList") {
+      return <NavHeader navList={item.value} />;
+    }
+  };
 
-  //   // getData(item)
-  // )}
-  //  {arr.map(
-  //   (item, id) =>
-  //     item.key === "flashingImages" ? <Carousel carouselList={item.value} /> : []
-
-  //   // getData(item)
-  // )}
-
-  // }
+  const getDataDesktopContainer = (item) => {
+    switch (item.key) {
+      case "carousel":
+        return <CarouselDesktop carouselList={item.value} />;
+      case "topOffers":
+        return <TopOffers offersList={item.value} />;
+      case "acMobiles":
+        return <AcMobiles acMobilesLists={item.value} />;
+      case "topDeals":
+        return <TopDeals dealsList={item.value} />
+      case "ads":
+        return  <Advertisement adsList={item.value} />
+      case "featuredBrand":
+        return <FeaturedBrand featuresList={item.value} />
+    }
+  };
 
   return (
     <div>
       <div className="mobile">
         <Header />
-        {arr.map((item, id) => getData(item))}
-        {/* <Carousel carouselList={carousels} /> */}
-        <ThreeImages threeImagesList={threeImages} />
-        <TwoImages twoImagesList={twoImages} />
-        <ElectronicList electronicsList={electronics} />
-        <InterestingFind findsList={finds} />
-        <Whishlist alerts={priceDrop} />
-        <Sponsored sponsoredList={sponsored} />
+        {arr.map((item, id) => getDataMobile(item))}
       </div>
       <div className="desktop">
         <DesktopHeader />
-        <NavHeader navList={desktopHeader} />
+        {arr.map((item, id) => getDataDesktop(item))}
         <div className="container">
-          <CarouselDesktop carouselList={desktopCarousel} />
-          <TopOffers offersList={topOffer} />
-          <AcMobiles acMobilesLists={acMobiles} />
-          <TopDeals dealsList={topDeals} />
-          <Advertisement adsList={ads} />
-          <FeaturedBrand featuresList={features} />
+          {arr.map((item, id) => getDataDesktopContainer(item))}   
         </div>
       </div>
     </div>
   );
 }
-
 export default FlipkartHome;
